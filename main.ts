@@ -17,7 +17,7 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.B)) {
         radio.sendNumber(2)
     }
-    if (input.buttonIsPressed(Button.AB)) {
+    if (input.isGesture(Gesture.Shake)) {
         radio.sendNumber(3)
     }
 })
