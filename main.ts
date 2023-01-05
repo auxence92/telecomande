@@ -4,10 +4,10 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onGesture(Gesture.TiltRight, function () {
-    radio.sendNumber(4)
+    radio.sendValue("droite", 0)
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    radio.sendNumber(5)
+    radio.sendValue("gauche", 0)
 })
 radio.setGroup(1)
 basic.forever(function () {
